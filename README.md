@@ -1,6 +1,10 @@
-# AI Golden Batch Optimization Tool
-Robust multi-service pharmaceutical process manufacturing data validation workspace.
+# AI Golden Batch Analytics & Process Optimization Platform
 
-## Local Evaluation Startup Flow
-1. Build local assets out: `python scripts/generate_data.py`
-2. Run single container build locally: `docker build -t pharma-app . && docker run -p 8501:8501 pharma-app`
+This repository contains the Enterprise Architecture for the AI Golden Batch platform (Version 3.1).
+
+## Quick Start
+1. Extract this zip file and open the directory in your terminal.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Generate dummy data: `python app/dummy_data_generator.py`
+4. Start the backend: `python app/golden_batch_core.py`
+5. Run the dashboard (in a new terminal): `streamlit run app/dashboard.py`
