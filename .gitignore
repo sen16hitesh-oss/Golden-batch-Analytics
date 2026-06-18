@@ -1,0 +1,20 @@
+  # Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Local Data Storage & Artifacts
+data/
+*.csv
+*.xlsx
+*.log
+
+# Databases
+*.sqlite3
