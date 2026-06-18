@@ -1,8 +1,6 @@
-# AI Golden Batch Architecture Tool - Pharma API Optimization
-Production repository layout for material-adaptive pharmaceutical analytical platforms.
+# AI Golden Batch Optimization Tool
+Robust multi-service pharmaceutical process manufacturing data validation workspace.
 
-## Run Stack Deployment
-1. Initialize local tables: `psql -U postgres -f database/init.sql`
-2. Populate tracking logs: `python scripts/generate_data.py`
-3. Launch API frame layer: `uvicorn backend.app:app --port 8000`
-4. Access UI terminal panel: `streamlit run frontend/dashboard.py --server.port 8501`
+## Local Evaluation Startup Flow
+1. Build local assets out: `python scripts/generate_data.py`
+2. Run single container build locally: `docker build -t pharma-app . && docker run -p 8501:8501 pharma-app`
